@@ -83,6 +83,28 @@ public class Main {
         // xóa
         set.remove(1);
         System.out.println(set);
+        int a = 10;
+        changeVariable(a);
+        System.out.println(a); // 10
 
+        int[] arrInt = {1,2};
+        changeArray(arrInt);
+        System.out.println(Arrays.toString(arrInt));
+
+
+        StringBuilder str =new StringBuilder("hung");
+        changeString(str);
+        System.out.println(str);
+
+    }
+    public static void changeVariable(int c){
+        c =100;
+
+        // c sẽ bị hủy
+    }
+    public static void changeArray(int[] a){
+        a[0] =100;
+    } public static void changeString(StringBuilder a){
+        a.append("khánh");
     }
 }

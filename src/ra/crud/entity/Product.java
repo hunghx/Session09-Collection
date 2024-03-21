@@ -5,6 +5,7 @@ import java.text.SimpleDateFormat;
 import java.util.Date;
 import java.util.List;
 import java.util.Scanner;
+import  static ra.crud.util.ShopMessage.*;
 
 public class Product {
     public static final SimpleDateFormat SDF = new SimpleDateFormat("dd/MM/yyyy");
@@ -100,7 +101,7 @@ public class Product {
                 }
                 System.err.println("ID đã tồn tại");
             }
-            System.err.println("Id không đúng đin dạng, bắt đầu bằng C,S,A và có 4 kí tự");
+            System.err.println(PRODUCT_NAME_NOT_VALID);
         }
     }
     private void getInputProductName(List<Product> products){

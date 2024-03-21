@@ -7,12 +7,13 @@ import java.util.Scanner;
 
 public class ProductManagement {
     private static IDesignProduct productImpl = new ProductImpl();
+
     public static void main(String[] args) {
-        while (true){
+        while (true) {
             displayMenu();
             System.out.println("Nhap lua chon cua ban");
             byte choice = new Scanner(System.in).nextByte();
-            switch (choice){
+            switch (choice) {
                 case 1:
                     // nhạp mơi
                     productImpl.addProduct();
@@ -21,7 +22,7 @@ public class ProductManagement {
                     // hien thi
                     productImpl.displayProducts();
                     break;
-                    case 3:
+                case 3:
                     // sua
                     productImpl.editProduct();
                     break;
@@ -38,7 +39,8 @@ public class ProductManagement {
             }
         }
     }
-    private static void displayMenu(){
+
+    private static void displayMenu() {
         System.out.println("====================Product Management====================");
         System.out.println("1.\tNhập thông tin các sản phẩm\n" +
                 "2.\tHiển thị thông tin các sản phẩm\n" +
